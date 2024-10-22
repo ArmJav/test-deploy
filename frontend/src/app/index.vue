@@ -2,13 +2,11 @@
 import { Routing } from "@pages/index.ts";
 import dayjs from "dayjs";
 import "dayjs/locale/ru";
-import ruRu from "ant-design-vue/es/locale/ru_Ru";
 
-dayjs.locale("ru");
 </script>
 
 <template>
-  <a-config-provider :locale="ruRu">
+  <a-config-provider >
     <Routing />
   </a-config-provider>
 </template>

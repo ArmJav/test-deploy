@@ -29,7 +29,7 @@ const loginHandler = async () => {
   );
 
   if (loginStatus === 200) {
-    const { data: loginHashData, status: loginHashStatus } =
+    const { status: loginHashStatus } =
       await loginHashCheck(
         loginData.data.username,
         loginData.data.hash,
